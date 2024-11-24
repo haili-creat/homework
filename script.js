@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   // 选择所有书籍项
-  const bookItems = document.querySelectorAll(".staff");
+  const bookItems = document.querySelectorAll(".book-item");
 
   // 添加点击事件（onclick）
   bookItems.forEach(function(item) {
@@ -11,13 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
   });
 
-  // 添加更改事件（onchange）（对于 div 元素不常用，通常用于 input 元素）
-  const specialBook = document.getElementById("special-employee");
-  if (specialBook) {
-    specialBook.addEventListener("change", function() {
-      console.log("特殊书籍已更改");
-    });
-  }
+  
 
   // 添加鼠标按下事件（onmousedown）
   bookItems.forEach(function(item) {
